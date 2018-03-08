@@ -11,7 +11,7 @@ declare var $: any;
 export class AppComponent implements OnInit {
   private lists: object;
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
   ) {}
   ngOnInit() {
     console.log($('#test').html());
