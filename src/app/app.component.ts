@@ -1,6 +1,8 @@
 import { Component , OnInit} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
+import * as _ from 'underscore';
+
 
 declare var $: any;
 @Component({
@@ -16,6 +18,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     console.log($('#test').html());
     this.getData();
+    console.log('now: ', _.now());
+    console.log(_.map([1, 2, 3], function(num) { return num * 3; }));
   }
   getData() {
     const body = {};

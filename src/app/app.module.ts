@@ -9,6 +9,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { DragulaService, DragulaModule } from 'ng2-dragula/ng2-dragula';
+import {PropagandaModule} from './propaganda/propaganda.module';
 
 
 @NgModule({
@@ -19,13 +21,17 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule.forRoot(),
     CKEditorModule,
     HttpClientModule,
+    DragulaModule,
+    PropagandaModule,
     AppRoutingModule
   ],
   declarations: [
     AppComponent,
     PageNotFoundComponent
   ],
-  providers: [],
+  providers: [
+    DragulaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
