@@ -1,10 +1,10 @@
 import { Component , OnInit} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
-import * as _ from 'underscore';
+import * as _ from 'underscore';  // underScore.js
 
 
-declare var $: any;
+declare var $: any;  // jQuery
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
